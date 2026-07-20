@@ -4,4 +4,4 @@
   tasks:
   - name: print the variable
     ansible.builitin.debug:
-      msg: " course is DevOps with AWS, Duration is 120hrs, trainer sivakumar"
+      msg: " course is DevOps with AWS, Duration is 120hrs, trainer sivakumar "
