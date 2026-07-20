@@ -1,12 +1,12 @@
 - name: variables
   hosts: local
-  connection: local
-  vars: #play local veriables global variables can be defined in inventory.ini file
+  connction: local
+  vars:
    COURSE: "DevOps with AWS"
-   DURATION: 120hrs
+   DURATION: 120HRS
    TRAINER: sivakumar
   tasks:
-    - name: print the variable
-      ansible.builtin.debug:
-        msg: " course is {{ COURSE }}, Duration is {{ DURATION }}, trainer {{ TRAINER }}"
-  
+   -name:print variables
+    ansible.builtin.debug:
+     msg: "course is {{ COURSE }}, Duration is: {{ DURATION }}, Trainer is {{ TRAINER }}"
+      
